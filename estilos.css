@@ -1,0 +1,21 @@
+.agrupar{/*Div Es un agrupador de elementos en un bloque, igual que section solo que la diferencia es que div se usa mas para algo mas global*/
+    background-color: black;
+    color: whitesmoke;
+    font-family: sans-serif;
+    width: 1000px;
+    margin: auto;/*Se ajusta automaticamente al centro independientemente de cualquier dispositivo o app la estemos viendo*/
+    margin-top: 200px;/*Margen de arriba*/
+    margin-bottom: 200px; /*Margen de abajo*/
+    margin-left: auto;/*Ajusta automaticamente todo el elemento hacia la izquierda*/
+    margin-right: auto; /*Lo mismo*/ 
+}
+body{
+    text-align: center; /*alinear el texto*/
+}
+h1{
+    font-size: 25px;
+}
+header, section, footer, aside, nav, article, hgroup{/* Selecionar varios elementos*/
+    border: 1px solid white; /*Poner las margenes del tamaño del elemento*/
+    display: block; /*Asegurar que todos los elementos sean un bloque, que ocupen todo el ancho */
+}
