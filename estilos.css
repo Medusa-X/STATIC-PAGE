@@ -1,18 +1,33 @@
 *{
-    padding: 0px;/*Es el relleno espacio de cada elemento*/
-    margin: 0px;/*Es el espacio margenes con el document*/
+    padding: 0px;
+    margin: 0px;
 }
 .agrupar{
     background-color: black;
     color: whitesmoke;
     font-family: sans-serif;
-    width: 1000px;
-    margin: 15px/*Modifica arriba y abajo, solo el eje y */ auto/*Modifica solo a los lados, es decir al eje x */;
+    width: 1000px; /*borde*/
+    margin: 15px auto;
 }
-.header{
+.cabecera{
     background: purple;
     border: 1px solid white;
     padding: 20px;
+}
+.cabecera h1{
+    text-align: left; /*alinear hacia la izquierda*/
+}
+.buscador{
+    background-color: blue;
+    padding: 5px 15px; /*El primer contenido hace referencia a x, el segundo a y */
+    text-align: left;
+}
+.buscador li{ /*selecciona los elementos los cuales tienen la clase buscador, y el elemento li */
+    list-style: none; /*No tenga ningun estilo por defecto*/
+    font: bold 15px verdana;
+    padding: 3px;
+    margin-left: 5px;
+    display: inline-block; /*ya no son elementos en bloque debajo del otro, sino elementos en bloque pero uno al lado del otro*/
 }
 body{
     text-align: center; 
