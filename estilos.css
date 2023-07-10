@@ -6,7 +6,7 @@
     background-color: black;
     color: whitesmoke;
     font-family: sans-serif;
-    width: 1000px; /*borde*/
+    width: 1000px; 
     margin: 15px auto;
 }
 .cabecera{
@@ -15,26 +15,47 @@
     padding: 20px;
 }
 .cabecera h1{
-    text-align: left; /*alinear hacia la izquierda*/
+    text-align: left; 
 }
 .buscador{
     background-color: blue;
-    padding: 5px 15px; /*El primer contenido hace referencia a x, el segundo a y */
+    padding: 5px 15px; 
     text-align: left;
 }
-.buscador li{ /*selecciona los elementos los cuales tienen la clase buscador, y el elemento li */
-    list-style: none; /*No tenga ningun estilo por defecto*/
+.buscador li{ 
+    list-style: none; 
     font: bold 15px verdana;
     padding: 3px;
     margin-left: 5px;
-    display: inline-block; /*ya no son elementos en bloque debajo del otro, sino elementos en bloque pero uno al lado del otro*/
+    display: inline-block; 
 }
+.seccion{
+    margin-left: 10px;
+    padding: 3px;
+    text-align: left;
+    margin: 20px; /*El padding es como aumentarle el tamaño al elemento bloque(el relleno), el margen es mas para tmb aumentar el espacio pero no del elemento, sino del elemento contra el elemento o toda la web*/
+    width: 600px; /*Width si es el verdadoero tamaño del elemento*/
+    border: 1px solid white;
+    float: left; /*lo que hace float es poder mover el elemento hacia la derecha o izquierda sin importar que sea un bloque(y por ende este debajdo de otro)*/
+}
+.columna{
+    margin: 20px 0px;
+    width: 300px;
+    border: 1px solid white;
+    float: left; 
+}
+.pie{
+    clear:both /*Los elementos que esten antes de los elementos que tengan esta clase, elimina que son objetos flotantes(deja el display normal) pero la posicion si la deja igual*/
+} 
 body{
     text-align: center; 
 }
 h1{
     font-size: 25px;
     color: greenyellow;
+}
+h3{
+    color: purple;
 }
 header, section, footer, aside, nav, article, hgroup{
     display: block; 
