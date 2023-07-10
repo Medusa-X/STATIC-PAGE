@@ -30,23 +30,40 @@
     display: inline-block; 
 }
 .seccion{
-    margin-left: 10px;
     padding: 3px;
     text-align: left;
     margin: 20px; /*El padding es como aumentarle el tamaño al elemento bloque(el relleno), el margen es mas para tmb aumentar el espacio pero no del elemento, sino del elemento contra el elemento o toda la web*/
     width: 600px; /*Width si es el verdadoero tamaño del elemento*/
-    border: 1px solid white;
     float: left; /*lo que hace float es poder mover el elemento hacia la derecha o izquierda sin importar que sea un bloque(y por ende este debajdo de otro)*/
 }
 .columna{
     margin: 20px 0px;
     width: 300px;
     border: 1px solid white;
+    background-color: peru;
+    padding: 20px;
     float: left; 
 }
 .pie{
     clear:both /*Los elementos que esten antes de los elementos que tengan esta clase, elimina que son objetos flotantes(deja el display normal) pero la posicion si la deja igual*/
+}
+article{
+    background-color:peru;
+    border: 1px solid white;
+    padding: 20px
+}
+article footer{
+    margin-top: 7px;
+    margin-bottom: 1px;
+    text-align: right;
 } 
+article h1{
+    margin-bottom: 7px;
+}
+.visual{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 body{
     text-align: center; 
 }
